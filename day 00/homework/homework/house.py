@@ -70,4 +70,7 @@ for i in range(3):
     t.forward(200)
 t.end_fill()
 
+if "name" == "main":
+    print("Hello")
+
 turtle.exitonclick()
