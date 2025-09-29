@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Grid</title>
+  <style>
+    #parent {
+      display: grid;
+      width: 400px;
+      height: 400px;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+      gap: 10px;
+    
+    }
+
+    .red { background: red; 
+        grid-column: 1 / 4; 
+        grid-row: 1; 
+        border-radius: 5px;
+    }
+    .blue { 
+        background: blue; 
+        grid-column: 1; 
+        grid-row: 2 / 4;
+        border-radius: 5px; 
+    }
+    .green  { background: green; 
+        grid-column: 2 / 4; 
+        grid-row: 2; 
+        border-radius: 5px;
+    }
+    .purple1 {
+        background: purple; 
+        grid-column: 2; 
+        grid-row: 3; 
+        border-radius: 5px;
+    }
+    .purple2 {  
+        background: purple;
+        grid-column: 3; 
+        grid-row: 3; 
+        border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="parent">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="purple1"></div>
+    <div class="purple2"></div>
+  </div>
+</body>
+</html>
